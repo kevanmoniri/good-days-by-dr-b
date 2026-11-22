@@ -1,0 +1,1 @@
+let big=false;try{big=localStorage.wellsteadLarge==='yes'}catch{}function resize(){document.documentElement.classList.toggle('big',big);document.querySelector('#size').setAttribute('aria-pressed',big)}resize();document.querySelector('#size').onclick=()=>{big=!big;resize();try{localStorage.wellsteadLarge=big?'yes':'no'}catch{}};
